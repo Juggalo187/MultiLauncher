@@ -1,0 +1,10 @@
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow_Login.Form1.resources
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow_Login.Properties.Resources.resources
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow-Login.csproj.GenerateResource.cache
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow-Login.csproj.CoreCompileInputs.cache
+F:\Repos\Wow-Login\Wow-Login\bin\Release\Wow-Login.exe.config
+F:\Repos\Wow-Login\Wow-Login\bin\Release\Wow-Login.exe
+F:\Repos\Wow-Login\Wow-Login\bin\Release\Wow-Login.pdb
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow-Login.exe
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow-Login.pdb
+F:\Repos\Wow-Login\Wow-Login\obj\Release\Wow-Login.csproj.AssemblyReference.cache

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wow-MultiLauncher", "Wow-MultiLauncher\Wow-MultiLauncher.csproj", "{6E298955-9278-446F-97B4-C0D460EBDB90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E298955-9278-446F-97B4-C0D460EBDB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E298955-9278-446F-97B4-C0D460EBDB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E298955-9278-446F-97B4-C0D460EBDB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E298955-9278-446F-97B4-C0D460EBDB90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2679BF28-AC6C-4B67-84B6-F5AEEE2036AC}
+	EndGlobalSection
+EndGlobal
