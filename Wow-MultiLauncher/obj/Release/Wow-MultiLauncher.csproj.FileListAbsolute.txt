@@ -8,3 +8,4 @@ F:\Repos\Wow-Login\Wow-MultiLauncher\obj\Release\Wow-MultiLauncher.csproj.Assemb
 F:\Repos\Wow-Login\Wow-MultiLauncher\obj\Release\Wow-MultiLauncher.Properties.Resources.resources
 F:\Repos\Wow-Login\Wow-MultiLauncher\obj\Release\Wow-MultiLauncher.exe
 F:\Repos\Wow-Login\Wow-MultiLauncher\obj\Release\Wow-MultiLauncher.pdb
+F:\Repos\Wow-Login\Wow-MultiLauncher\obj\Release\Wow_Login.Form2.resources

@@ -12,81 +12,81 @@ using System.Windows.Forms;
 
 namespace Wow_Login
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
 
-            if (!Directory.Exists(@"Data\Paths\Alt\"))
-            { Directory.CreateDirectory(@"Data\Paths\Alt\"); }
+            if (!Directory.Exists(@"Data\Paths\Alt\Alt\"))
+            { Directory.CreateDirectory(@"Data\Paths\Alt\Alt\"); }
 
-            var fInfopassvanilla = new FileInfo(@"Data\Paths\passvanilla.txt");
-            var fInfopassTBC = new FileInfo(@"Data\Paths\passTBC.txt");
-            var fInfopassWotlk = new FileInfo(@"Data\Paths\passWotlk.txt");
-            var fInfopassCata = new FileInfo(@"Data\Paths\passCata.txt");
-            var fInfopassMop = new FileInfo(@"Data\Paths\passMop.txt");
-            var fInfopassLegion = new FileInfo(@"Data\Paths\passLegion.txt");
-            var fInfopassBFA = new FileInfo(@"Data\Paths\passBFA.txt");
-            var fInfopassSL = new FileInfo(@"Data\Paths\passSL.txt");
+            var fInfopassvanilla = new FileInfo(@"Data\Paths\Alt\passvanilla.txt");
+            var fInfopassTBC = new FileInfo(@"Data\Paths\Alt\passTBC.txt");
+            var fInfopassWotlk = new FileInfo(@"Data\Paths\Alt\passWotlk.txt");
+            var fInfopassCata = new FileInfo(@"Data\Paths\Alt\passCata.txt");
+            var fInfopassMop = new FileInfo(@"Data\Paths\Alt\passMop.txt");
+            var fInfopassLegion = new FileInfo(@"Data\Paths\Alt\passLegion.txt");
+            var fInfopassBFA = new FileInfo(@"Data\Paths\Alt\passBFA.txt");
+            var fInfopassSL = new FileInfo(@"Data\Paths\Alt\passSL.txt");
 
 
-            var snamevanilla = new FileInfo(@"Data\Paths\servervanilla.txt");
-            var snameTBC = new FileInfo(@"Data\Paths\serverTBC.txt");
-            var snameWotlk = new FileInfo(@"Data\Paths\serverWotlk.txt");
-            var snameCata = new FileInfo(@"Data\Paths\serverCata.txt");
-            var snameMop = new FileInfo(@"Data\Paths\serverMop.txt");
-            var snameLegion = new FileInfo(@"Data\Paths\serverLegion.txt");
-            var snameBFA = new FileInfo(@"Data\Paths\serverBFA.txt");
-            var snameSL = new FileInfo(@"Data\Paths\serverSL.txt");
+            var snamevanilla = new FileInfo(@"Data\Paths\Alt\servervanilla.txt");
+            var snameTBC = new FileInfo(@"Data\Paths\Alt\serverTBC.txt");
+            var snameWotlk = new FileInfo(@"Data\Paths\Alt\serverWotlk.txt");
+            var snameCata = new FileInfo(@"Data\Paths\Alt\serverCata.txt");
+            var snameMop = new FileInfo(@"Data\Paths\Alt\serverMop.txt");
+            var snameLegion = new FileInfo(@"Data\Paths\Alt\serverLegion.txt");
+            var snameBFA = new FileInfo(@"Data\Paths\Alt\serverBFA.txt");
+            var snameSL = new FileInfo(@"Data\Paths\Alt\serverSL.txt");
 
 
 
             if (fInfopassvanilla.Exists)
             {
-                var passlinevanilla = File.ReadLines(@"Data\Paths\passvanilla.txt").First();
+                var passlinevanilla = File.ReadLines(@"Data\Paths\Alt\passvanilla.txt").First();
                 textBox2.Text = passlinevanilla; 
             }
 
             if (fInfopassTBC.Exists)
             {
-                var passlineTBC = File.ReadLines(@"Data\Paths\passTBC.txt").First();
+                var passlineTBC = File.ReadLines(@"Data\Paths\Alt\passTBC.txt").First();
                 textBox4.Text = passlineTBC;
             }
 
             if (fInfopassWotlk.Exists)
             {
-                var passlineWotlk = File.ReadLines(@"Data\Paths\passWotlk.txt").First();
+                var passlineWotlk = File.ReadLines(@"Data\Paths\Alt\passWotlk.txt").First();
                 textBox6.Text = passlineWotlk;
             }
 
             if (fInfopassCata.Exists)
             {
-                var passlineCata = File.ReadLines(@"Data\Paths\passCata.txt").First();
+                var passlineCata = File.ReadLines(@"Data\Paths\Alt\passCata.txt").First();
                 textBox8.Text = passlineCata;
             }
 
             if (fInfopassMop.Exists)
             {
-                var passlineMop = File.ReadLines(@"Data\Paths\passMop.txt").First();
+                var passlineMop = File.ReadLines(@"Data\Paths\Alt\passMop.txt").First();
                 textBox10.Text = passlineMop;
             }
 
             if (fInfopassLegion.Exists)
             {
-                var passlineLegion = File.ReadLines(@"Data\Paths\passLegion.txt").First();
+                var passlineLegion = File.ReadLines(@"Data\Paths\Alt\passLegion.txt").First();
                 textBox12.Text = passlineLegion;
             }
 
             if (fInfopassBFA.Exists)
             {
-                var passlineBFA = File.ReadLines(@"Data\Paths\passBFA.txt").First();
+                var passlineBFA = File.ReadLines(@"Data\Paths\Alt\passBFA.txt").First();
                 textBox14.Text = passlineBFA;
             }
 
             if (fInfopassSL.Exists)
             {
-                var passlineSL = File.ReadLines(@"Data\Paths\passSL.txt").First();
+                var passlineSL = File.ReadLines(@"Data\Paths\Alt\passSL.txt").First();
                 textBox17.Text = passlineSL;
             }
 
@@ -95,27 +95,27 @@ namespace Wow_Login
 
             if (snamevanilla.Exists)
             {
-                var vanillaname = File.ReadLines(@"Data\Paths\servervanilla.txt").First();
+                var vanillaname = File.ReadLines(@"Data\Paths\Alt\servervanilla.txt").First();
                 textBox1.Text = vanillaname;
             }
 
             if (snameTBC.Exists)
             {
-                var TBCaname = File.ReadLines(@"Data\Paths\serverTBC.txt").First();
+                var TBCaname = File.ReadLines(@"Data\Paths\Alt\serverTBC.txt").First();
                 textBox3.Text = TBCaname;
             }
 
 
             if (snameWotlk.Exists)
             {
-                var Wotlkname = File.ReadLines(@"Data\Paths\serverWotlk.txt").First();
+                var Wotlkname = File.ReadLines(@"Data\Paths\Alt\serverWotlk.txt").First();
                 textBox5.Text = Wotlkname;
             }
 
 
             if (snameCata.Exists)
             {
-                var Cataname = File.ReadLines(@"Data\Paths\serverCata.txt").First();
+                var Cataname = File.ReadLines(@"Data\Paths\Alt\serverCata.txt").First();
                 textBox7.Text = Cataname;
             }
 
@@ -123,27 +123,27 @@ namespace Wow_Login
 
             if (snameMop.Exists)
             {
-                var Mopname = File.ReadLines(@"Data\Paths\serverMop.txt").First();
+                var Mopname = File.ReadLines(@"Data\Paths\Alt\serverMop.txt").First();
                 textBox9.Text = Mopname;
             }
 
 
             if (snameLegion.Exists)
             {
-                var Legionname = File.ReadLines(@"Data\Paths\serverLegion.txt").First();
+                var Legionname = File.ReadLines(@"Data\Paths\Alt\serverLegion.txt").First();
                 textBox11.Text = Legionname;
             }
 
             if (snameBFA.Exists)
             {
-                var BFAname = File.ReadLines(@"Data\Paths\serverBFA.txt").First();
+                var BFAname = File.ReadLines(@"Data\Paths\Alt\serverBFA.txt").First();
                 textBox13.Text = BFAname;
             }
 
 
             if (snameSL.Exists)
             {
-                var SLname = File.ReadLines(@"Data\Paths\serverSL.txt").First();
+                var SLname = File.ReadLines(@"Data\Paths\Alt\serverSL.txt").First();
                 textBox15.Text = SLname;
             }
 
@@ -162,13 +162,13 @@ namespace Wow_Login
         private void button3_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startWotlk.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startWotlk.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox5.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverWotlk.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverWotlk.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -189,7 +189,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startWotlk.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startWotlk.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -203,7 +203,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passWotlk.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passWotlk.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox6.Text);
@@ -219,7 +219,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -233,8 +233,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startWotlk.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passWotlk.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startWotlk.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passWotlk.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -254,7 +254,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -268,8 +268,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startWotlk.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passWotlk.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startWotlk.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passWotlk.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -287,13 +287,13 @@ namespace Wow_Login
         private void button1_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startvanilla.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startvanilla.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox1.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\servervanilla.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\servervanilla.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -316,7 +316,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startvanilla.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startvanilla.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -330,7 +330,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passvanilla.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passvanilla.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox2.Text);
@@ -346,7 +346,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -360,8 +360,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startvanilla.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passvanilla.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startvanilla.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passvanilla.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -381,7 +381,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -395,8 +395,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startvanilla.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passvanilla.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startvanilla.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passvanilla.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -432,7 +432,7 @@ namespace Wow_Login
             textBox2.Text = "";
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
@@ -440,14 +440,14 @@ namespace Wow_Login
         private void button2_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startTBC.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startTBC.txt");
             string filePath;
             string passPath;
 
             string servernamePath;
 
             servernamePath = textBox3.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverTBC.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverTBC.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -469,7 +469,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startTBC.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startTBC.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -484,7 +484,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passTBC.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passTBC.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox4.Text);
@@ -500,7 +500,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -513,8 +513,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startTBC.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passTBC.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startTBC.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passTBC.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -534,7 +534,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -547,8 +547,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startTBC.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passTBC.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startTBC.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passTBC.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -571,13 +571,13 @@ namespace Wow_Login
         private void button4_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startCata.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startCata.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox7.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverCata.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverCata.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -598,7 +598,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startCata.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startCata.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -613,7 +613,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passCata.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passCata.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox8.Text);
@@ -629,7 +629,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -642,8 +642,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startCata.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passCata.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startCata.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passCata.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -663,7 +663,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -676,8 +676,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startCata.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passCata.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startCata.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passCata.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -695,13 +695,13 @@ namespace Wow_Login
         private void button5_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startMop.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startMop.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox9.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverMop.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverMop.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -722,7 +722,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startMop.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startMop.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -737,7 +737,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passMop.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passMop.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox10.Text);
@@ -753,7 +753,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -766,8 +766,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startMop.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passMop.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startMop.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passMop.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -787,7 +787,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -800,8 +800,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startMop.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passMop.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startMop.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passMop.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -819,13 +819,13 @@ namespace Wow_Login
         private void button6_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startLegion.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startLegion.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox11.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverLegion.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverLegion.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -846,7 +846,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startLegion.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startLegion.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -861,7 +861,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passLegion.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passLegion.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox12.Text);
@@ -877,7 +877,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -890,8 +890,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startLegion.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passLegion.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startLegion.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passLegion.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -911,7 +911,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -924,8 +924,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startLegion.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passLegion.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startLegion.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passLegion.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -943,13 +943,13 @@ namespace Wow_Login
         private void button7_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startBFA.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startBFA.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox13.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverBFA.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverBFA.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -970,7 +970,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startBFA.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startBFA.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -985,7 +985,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passBFA.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passBFA.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox14.Text);
@@ -1001,7 +1001,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -1014,8 +1014,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startBFA.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passBFA.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startBFA.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passBFA.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -1035,7 +1035,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -1048,8 +1048,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startBFA.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passBFA.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startBFA.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passBFA.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -1067,13 +1067,13 @@ namespace Wow_Login
         private void button8_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
-            var fInfo = new FileInfo(@"Data\Paths\startSL.txt");
+            var fInfo = new FileInfo(@"Data\Paths\Alt\startSL.txt");
             string filePath;
             string passPath;
             string servernamePath;
 
             servernamePath = textBox15.Text;
-            TextWriter servername = new StreamWriter(@"Data\Paths\serverSL.txt");
+            TextWriter servername = new StreamWriter(@"Data\Paths\Alt\serverSL.txt");
             servername.Write(servernamePath);
             servername.Close();
 
@@ -1094,7 +1094,7 @@ namespace Wow_Login
             {
                 if (fInfo.Exists)
                 {
-                    var wowline1 = File.ReadLines(@"Data\Paths\startSL.txt").First();
+                    var wowline1 = File.ReadLines(@"Data\Paths\Alt\startSL.txt").First();
                     var fInfo2 = new FileInfo(wowline1);
 
                     if (fInfo2.Exists)
@@ -1109,7 +1109,7 @@ namespace Wow_Login
                         wow.StartInfo.FileName = wowline1;
                         wow.Start();
 
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passSL.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passSL.txt");
                         pass.Write(passPath);
                         pass.Close();
                         Clipboard.SetDataObject(textBox17.Text);
@@ -1125,7 +1125,7 @@ namespace Wow_Login
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            var path = @"Data\Paths\";
+                            var path = @"Data\Paths\Alt\";
                             _ = Directory.CreateDirectory(path);
 
                             //Get the path of specified file
@@ -1138,8 +1138,8 @@ namespace Wow_Login
                             wow.StartInfo.FileName = filePath;
                             wow.Start();
 
-                            TextWriter txt = new StreamWriter(@"Data\Paths\startSL.txt");
-                            TextWriter pass = new StreamWriter(@"Data\Paths\passSL.txt");
+                            TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startSL.txt");
+                            TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passSL.txt");
                             txt.Write(filePath);
                             pass.Write(passPath);
                             txt.Close();
@@ -1159,7 +1159,7 @@ namespace Wow_Login
                     openFileDialog.RestoreDirectory = true;
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        var path = @"Data\Paths\";
+                        var path = @"Data\Paths\Alt\";
                         _ = Directory.CreateDirectory(path);
 
                         //Get the path of specified file
@@ -1172,8 +1172,8 @@ namespace Wow_Login
                         wow.StartInfo.FileName = filePath;
                         wow.Start();
 
-                        TextWriter txt = new StreamWriter(@"Data\Paths\startSL.txt");
-                        TextWriter pass = new StreamWriter(@"Data\Paths\passSL.txt");
+                        TextWriter txt = new StreamWriter(@"Data\Paths\Alt\startSL.txt");
+                        TextWriter pass = new StreamWriter(@"Data\Paths\Alt\passSL.txt");
                         txt.Write(filePath);
                         pass.Write(passPath);
                         txt.Close();
@@ -1243,10 +1243,10 @@ namespace Wow_Login
 
         private void TextBox1_LostFocus(object sender, EventArgs e)
         {
-            var snamevanilla = new FileInfo(@"Data\Paths\servervanilla.txt");
+            var snamevanilla = new FileInfo(@"Data\Paths\Alt\servervanilla.txt");
             if (textBox1.Text.Length == 0 && snamevanilla.Exists)
             {
-                var vanillaname = File.ReadLines(@"Data\Paths\servervanilla.txt").First();
+                var vanillaname = File.ReadLines(@"Data\Paths\Alt\servervanilla.txt").First();
                 textBox1.Text = vanillaname; 
             
             }
@@ -1254,10 +1254,10 @@ namespace Wow_Login
 
         private void TextBox3_LostFocus(object sender, EventArgs e)
         {
-            var snameTBC = new FileInfo(@"Data\Paths\serverTBC.txt");
+            var snameTBC = new FileInfo(@"Data\Paths\Alt\serverTBC.txt");
             if (textBox3.Text.Length == 0 && snameTBC.Exists)
             {
-                var TBCname = File.ReadLines(@"Data\Paths\serverTBC.txt").First();
+                var TBCname = File.ReadLines(@"Data\Paths\Alt\serverTBC.txt").First();
                 textBox3.Text = TBCname;
 
             }
@@ -1265,10 +1265,10 @@ namespace Wow_Login
 
         private void TextBox5_LostFocus(object sender, EventArgs e)
         {
-            var snameWotlk = new FileInfo(@"Data\Paths\serverWotlk.txt");
+            var snameWotlk = new FileInfo(@"Data\Paths\Alt\serverWotlk.txt");
             if (textBox5.Text.Length == 0 && snameWotlk.Exists)
             {
-                var Wotlkname = File.ReadLines(@"Data\Paths\serverWotlk.txt").First();
+                var Wotlkname = File.ReadLines(@"Data\Paths\Alt\serverWotlk.txt").First();
                 textBox5.Text = Wotlkname;
 
             }
@@ -1276,10 +1276,10 @@ namespace Wow_Login
 
         private void TextBox7_LostFocus(object sender, EventArgs e)
         {
-            var snameCata = new FileInfo(@"Data\Paths\serverCata.txt");
+            var snameCata = new FileInfo(@"Data\Paths\Alt\serverCata.txt");
             if (textBox7.Text.Length == 0 && snameCata.Exists)
             {
-                var Cataname = File.ReadLines(@"Data\Paths\serverCata.txt").First();
+                var Cataname = File.ReadLines(@"Data\Paths\Alt\serverCata.txt").First();
                 textBox7.Text = Cataname;
 
             }
@@ -1288,10 +1288,10 @@ namespace Wow_Login
 
         private void TextBox9_LostFocus(object sender, EventArgs e)
         {
-            var snameMop = new FileInfo(@"Data\Paths\serverMop.txt");
+            var snameMop = new FileInfo(@"Data\Paths\Alt\serverMop.txt");
             if (textBox9.Text.Length == 0 && snameMop.Exists)
             {
-                var Mopname = File.ReadLines(@"Data\Paths\serverMop.txt").First();
+                var Mopname = File.ReadLines(@"Data\Paths\Alt\serverMop.txt").First();
                 textBox9.Text = Mopname;
 
             }
@@ -1299,10 +1299,10 @@ namespace Wow_Login
 
         private void TextBox11_LostFocus(object sender, EventArgs e)
         {
-            var snameLegion = new FileInfo(@"Data\Paths\serverLegion.txt");
+            var snameLegion = new FileInfo(@"Data\Paths\Alt\serverLegion.txt");
             if (textBox11.Text.Length == 0 && snameLegion.Exists)
             {
-                var Legionname = File.ReadLines(@"Data\Paths\serverLegion.txt").First();
+                var Legionname = File.ReadLines(@"Data\Paths\Alt\serverLegion.txt").First();
                 textBox11.Text = Legionname;
 
             }
@@ -1310,10 +1310,10 @@ namespace Wow_Login
 
         private void TextBox13_LostFocus(object sender, EventArgs e)
         {
-            var snameBFA = new FileInfo(@"Data\Paths\serverBFA.txt");
+            var snameBFA = new FileInfo(@"Data\Paths\Alt\serverBFA.txt");
             if (textBox13.Text.Length == 0 && snameBFA.Exists)
             {
-                var BFAname = File.ReadLines(@"Data\Paths\serverBFA.txt").First();
+                var BFAname = File.ReadLines(@"Data\Paths\Alt\serverBFA.txt").First();
                 textBox13.Text = BFAname;
 
             }
@@ -1321,10 +1321,10 @@ namespace Wow_Login
 
         private void TextBox15_LostFocus(object sender, EventArgs e)
         {
-            var snameSL = new FileInfo(@"Data\Paths\serverSL.txt");
+            var snameSL = new FileInfo(@"Data\Paths\Alt\serverSL.txt");
             if (textBox15.Text.Length == 0 && snameSL.Exists)
             {
-                var SLname = File.ReadLines(@"Data\Paths\serverSL.txt").First();
+                var SLname = File.ReadLines(@"Data\Paths\Alt\serverSL.txt").First();
                 textBox15.Text = SLname;
 
             }
